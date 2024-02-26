@@ -1,2 +1,2 @@
-# Interpreter
+# Control
 Bananchiki

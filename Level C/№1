@@ -1,0 +1,19 @@
+import pandas as pd
+df = pd.read_csv("File.csv", delimiter=";",names=['column_1','column_2','column_3','column_4'])
+def funk(stolb,stroka):
+    ind=['column_1','column_2','column_3','column_4']
+    print(df.replace(df.at[stroka-1,ind[stolb-1]],input("На что заменить?")))
+while True:
+    try:
+        stolb = int(input("Строка:"))
+    except:
+        continue
+    break
+while True:
+    try:
+        stroka = int(input("Столб:"))
+    except:
+        print("Error")
+        continue
+    break
+funk(stolb, stroka)
